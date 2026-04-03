@@ -211,9 +211,9 @@ class EPUBTranslator:
         for item in translated_items:
             new_book.add_item(item)
         
-        # Preserve table of contents
+        # Preserve table of contents - only include EpubHtml items
         if book.toc:
-            new_book.toc = book.toc
+            new_book.toc = [item for item in book.toc if isinstance(item, epub.EpubHtml)]
         
         # Preserve spine
         if book.spine:
