@@ -3,10 +3,9 @@
 *.pyc
 __pycache__/
 
-# Dependencies
-.venv/
-venv/
-node_modules/
+# Test files
+*.epub
+test_*.py
 
 # Logs and temp files
 *.log
@@ -16,7 +15,7 @@ node_modules/
 # Environment
 .env
 .env.local
-*.env.*
+.env.*
 
 # Editors
 .vscode/
@@ -27,25 +26,7 @@ node_modules/
 coverage/
 htmlcov/
 
-# Python specific
-*.pyo
-*.pyd
-.Python
-*.so
-
-# Distribution / packaging
-.dist-info/
-.wheelhouse/
-eggs/
-.installed.cfg
-
-# Pytest cache
-.pytest_cache/
-
-# Mypy cache
+# Python cache
 .mypy_cache/
-
-# OS generated files
-.DS_Store
-Thumbs.db
+.pytest_cache/
 ```
